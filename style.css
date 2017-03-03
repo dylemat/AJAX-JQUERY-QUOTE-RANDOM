@@ -1,0 +1,13 @@
+body{
+	background-color: #55ACEE;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 15px;
+}
