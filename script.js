@@ -4,13 +4,15 @@ function getQuote() {
 	$.getJSON(quoteUrl, createTweet);
 }
 function createTweet(input) {
+	var tweetText = "Quote of the day - " + input.quoteText + " Author: " + input.quoteAuthor;
+    	if (tweetText.length > 140) {
+	getQuote();
+}
 	if (!input.quoteAuthor.length) {
 		input.quoteAuthor = "Unknown author";
 	}
-    var tweetText = "Quote of the day - " + input.quoteText + " Author: " + input.quoteAuthor;
-    if (tweetText.length > 140) {
-	getQuote();
-} else {
+
+else {
 	var tweet = tweetLink + encodeURIComponent(tweetText);
 	$('.quote').text(input.quoteText);
 	$('.author').text("Author: " + input.quoteAuthor);
