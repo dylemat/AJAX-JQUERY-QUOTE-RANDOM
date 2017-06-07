@@ -1,13 +1,27 @@
-body{
-	background-color: #55ACEE;
-	color: white;
-	font-family: sans-serif;
-	text-align: center;
-}
-a{
-	text-decoration: none;
-	color: white;
-	border: 1px solid white;
-	padding: 10px;
-	border-radius: 15px;
-}
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(bg.png);
+        background-repeat: repeat;
+		color: white;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+	button{
+		border : solid 0px #296aba;
+		border-radius : 6px;
+		moz-border-radius : 6px;
+		font-size : 20px;
+		color : #ffffff;
+		padding : 1px 17px;
+		background-color : #2d8ed4;
+
+	}
